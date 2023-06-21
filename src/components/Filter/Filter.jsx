@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import css from './Filter.module.css';
 
-const Filter = (props) => {
+const Filter = props => {
   const { onInputChange } = props;
 
   return (
@@ -25,4 +25,3 @@ Filter.propTypes = {
 };
 
 export default Filter;
-

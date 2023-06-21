@@ -41,6 +41,7 @@ class LoginForm extends Component {
             <ErrorMessage name="phoneNumber" component="div" />
           </label>
           <button className={css.submitButton} type="submit">Add contact</button>
+          
         </Form>
       </Formik>
     );

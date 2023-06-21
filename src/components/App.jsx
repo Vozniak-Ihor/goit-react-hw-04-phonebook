@@ -10,14 +10,18 @@ const [filter, setFilter] = useState('');
 
 useEffect(() => {
   const contactsFromLocalStorage = JSON.parse(localStorage.getItem('contacts'));
-  if (contactsFromLocalStorage) {
+  if (contactsFromLocalStorage && contactsFromLocalStorage.length > 0) {
     setContacts(contactsFromLocalStorage);
   }
 }, []);
 
+
 useEffect(() => {
   localStorage.setItem('contacts', JSON.stringify(contacts));
 }, [contacts]);
+
+console.log(contacts);
+
 
   const handleInputChange = e => {
     setFilter(e.target.value);
