@@ -31,13 +31,13 @@ export default ContactsList;
 
 
 
-// ContactsList.propTypes = {
-//     contacts: PropTypes.arrayOf(
-//         PropTypes.exact({
-//             name: PropTypes.string.isRequired,
-//             id: PropTypes.string.isRequired,
-//             number:PropTypes.string.isRequired
-//                 })
-//     ),
-//     onDeleteContact: PropTypes.func.isRequired
-// }
+ContactsList.propTypes = {
+    contacts: PropTypes.arrayOf(
+        PropTypes.exact({
+            name: PropTypes.string.isRequired,
+            id: PropTypes.string.isRequired,
+            number:PropTypes.string.isRequired
+                })
+    ),
+    onDeleteContact: PropTypes.func.isRequired
+}
